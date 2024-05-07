@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base target="_blank" />
+    <title>Screen Recording With Camera Demo - addpipe.com</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Recording Your Screen And Camera Demo</h1>
+      <p>
+        <small
+          >Made by the
+          <a href="https://addpipe.com">Pipe Recording Platform</a></small
+        >
+      </p>
+      <p>
+        This demo uses <strong>getDisplayMedia()</strong>,
+        <strong>MediaStream Recording API</strong> and
+        <strong>HTML Canvas</strong> to record the screen and your camera at the
+        same time.
+      </p>
+      <div class="recording-wrapper">
+        <video id="bigVideo" controls autoplay></video>
+        <video id="smallVideo" class="camera-video" autoplay></video>
+        <canvas id="recordingCanvas" class="recording-canvas"></canvas>
+      </div>
+      <div id="controls">
+        <button id="shareScreen" onclick="onShareScreen()">Share Screen + Camera</button>
+        <button id="rec" onclick="onBtnRecordClicked()" disabled>Record</button>
+        <button id="stop" onclick="onBtnStopClicked()" disabled>Stop</button>
+        <button id="stateButton" onclick="onStateClicked()">trace state</button>
+      </div>
+    </div>
+    <a
+      id="downloadLink"
+      download="mediarecorder.webm"
+      name="mediarecorder.webm"
+      href
+    ></a>
+    <p id="data"></p>
+    <script src="js/main.js"></script>
+    <h2>Works on:</h2>
+    <ul>
+      <li>Chrome 72 and up</li>
+      <li>Edge 79 and up</li>
+      <li>Firefox 66 and up</li>
+      <li>Opera 60 and up</li>
+    </ul>
+    <h2>Links:</h2>
+    <ul>
+      <li>
+        Code for this demo on GitHub:
+        <a target="_blank" href="https://github.com/addpipe/record-screen-and-camera-demo"
+          >https://github.com/addpipe/record-screen-and-camera-demo</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
