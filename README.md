@@ -1,6 +1,6 @@
 # Screen & Webcam Recording Demo with getDisplayMedia & getUserMedia
 
-This demo uses `getDisplayMedia()`, `HTML Canvas` and the `Media Stream Recording API` to record the screen and the camera at the same time.
+[This demo](https://addpipe.com/get-display-media-with-cam/) uses `getDisplayMedia()`, `HTML Canvas` and the `Media Stream Recording API` to record the screen and the camera at the same time.
 
 The screen content and webcam video are drawn onto an HTML5 `<canvas>`, which is then recorded using a `MediaRecorder`. This approach allows us to display your webcam as a picture-in-picture (PiP) overlay while recording the entire screen.
 
